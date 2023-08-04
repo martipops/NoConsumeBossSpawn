@@ -1,0 +1,5 @@
+Makes it so that boss spawns do not consume on use.
+Cross-mod compatible.
+
+Join the discord to report bugs & suggest changes:
+https://discord.gg/MKcjBKwBVu
