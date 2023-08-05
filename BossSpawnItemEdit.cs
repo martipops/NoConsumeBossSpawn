@@ -11,10 +11,9 @@ namespace NoConsumeBossSpawn
         {
             if (base.ConsumeItem(item, player))
             {
-                // bitwise to test itemgroup in a local context
-                if ((ContentSamples.CreativeHelper.GetItemGroup(item, out _)
-                & (ContentSamples.CreativeHelper.ItemGroup.BossItem
-                | ContentSamples.CreativeHelper.ItemGroup.EventItem)) != 0)
+                var ig = ContentSamples.CreativeHelper.GetItemGroup(item, out _);
+
+                if (ig == (ContentSamples.CreativeHelper.ItemGroup.BossItem) || ig == (ContentSamples.CreativeHelper.ItemGroup.EventItem))
                 {
                     return false;
                 }

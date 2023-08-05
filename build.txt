@@ -1,6 +1,6 @@
 displayName = Don't Consume Boss Spawns
 author = Martipops
-version = 2023.8.4.2
+version = 2023.8.4.3
 homepage = https://discord.gg/MKcjBKwBVu
 side = Both
 hideCode = false
